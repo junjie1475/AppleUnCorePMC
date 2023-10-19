@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		B3E1B3BE2ADE85E600D81E4C /* UncorePMC.c in Sources */ = {isa = PBXBuildFile; fileRef = B3E1B3BD2ADE85E600D81E4C /* UncorePMC.c */; };
+		B3E1B3C62ADE871400D81E4C /* uncore_add.s in Sources */ = {isa = PBXBuildFile; fileRef = B3E1B3C52ADE871300D81E4C /* uncore_add.s */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B3E1B3BA2ADE85E600D81E4C /* UncorePMC.kext */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UncorePMC.kext; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3E1B3BD2ADE85E600D81E4C /* UncorePMC.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = UncorePMC.c; sourceTree = "<group>"; };
 		B3E1B3BF2ADE85E600D81E4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3E1B3C52ADE871300D81E4C /* uncore_add.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = uncore_add.s; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +48,7 @@
 		B3E1B3BC2ADE85E600D81E4C /* UncorePMC */ = {
 			isa = PBXGroup;
 			children = (
+				B3E1B3C52ADE871300D81E4C /* uncore_add.s */,
 				B3E1B3BD2ADE85E600D81E4C /* UncorePMC.c */,
 				B3E1B3BF2ADE85E600D81E4C /* Info.plist */,
 			);
@@ -131,6 +134,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3E1B3BE2ADE85E600D81E4C /* UncorePMC.c in Sources */,
+				B3E1B3C62ADE871400D81E4C /* uncore_add.s in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
