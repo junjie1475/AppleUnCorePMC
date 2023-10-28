@@ -8,7 +8,7 @@
 	  * x1 - uint32_t *ctr_out
 	  * x2 - uint8_t *mt_uncore_enabled
 	  * x3 - uint16_t *uncore_active_ctrs
-	  * x5 - void *uncore_add_ptr
+	  * x4 - void *uncore_add_ptr
 	 */
 _uncore_add_wrap:
 	pacibsp
@@ -52,4 +52,4 @@ err_nospc:
 	b     err
     
 call:
-   br			x5
+   br			x4
