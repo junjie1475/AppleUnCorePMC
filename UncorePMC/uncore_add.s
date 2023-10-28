@@ -36,7 +36,10 @@ err:
 	retab
 
 check_available:
-	mov	x20, x0
+	mov	  x20, x0
+    mov   x21, x3
+    lsr   x21, x21, #12  // Here we try to do what adrp does
+    lsl   x21, x21, #12
 	ldrh  w8, [x3]
 	ldr   x9, [x0, #0x8]
 	bic	x25, x9, x8	
